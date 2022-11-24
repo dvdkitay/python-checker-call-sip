@@ -5,6 +5,7 @@
 <img src="https://img.shields.io/github/issues-pr/dvdkitay/python-checker-call-sip" />
 </div>
 
+<p>
 ```
 [SCRIPT-DEBUG] INFO: Скрипт запущен
 [SCRIPT-DEBUG] INFO: Обнаружено 3 добавочных номеров
@@ -88,3 +89,4 @@ python3 show.py
 [SCRIPT-DEBUG] INFO: Добавочный 2 Статус: True
 [SCRIPT-DEBUG] INFO: Добавочный 3 Статус: True
 ```
+</p>
