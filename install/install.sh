@@ -59,7 +59,7 @@ echo 'runuser = asterisk' >> /etc/asterisk/asterisk.conf
 echo 'rungroup = asterisk ' >> /etc/asterisk/asterisk.conf
 
 echo 'enable=yes' >> /etc/asterisk/cdr.conf
-echo 'safeshutdown=yes ' >> /etc/asterisk/cdr.conf
+echo 'safeshutdown=yes' >> /etc/asterisk/cdr.conf
 
 
 sudo systemctl restart asterisk

@@ -65,7 +65,11 @@ def start(NUMBER_CALLING, CALLER_ID, ANSWER_WAIT, ANSWER_DTMF_WAIT, WORK_DTMF_SE
 
         logging.info(f"Конфигурация запущена")
         
-        shutil.copy2("temp/Master.csv", '/var/log/asterisk/cdr-csv/Master.csv')
+        try:
+            os.remove("/var/log/asterisk/cdr-csv/Master.csv")
+        except Exception as error:
+            pass
+        
         logging.info(f"Файл статистики Asterisk очищен")
         time.sleep(3)
         os.remove("temp/result.json")
