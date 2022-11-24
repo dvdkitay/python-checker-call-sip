@@ -19,7 +19,6 @@ logging.info(f"Скрипт запущен")
 def csv_to_json(csvFilePath, jsonFilePath, WORK_DTMF_SECONDS):
     jsonArray = []
       
-    #read csv file
     with open(csvFilePath, encoding='utf-8') as csvf: 
 
         for row in csvf: 
@@ -32,14 +31,12 @@ def csv_to_json(csvFilePath, jsonFilePath, WORK_DTMF_SECONDS):
                 "status": True if float(row[13]) > int(WORK_DTMF_SECONDS) else False}
             )
   
-    #convert python jsonArray to JSON String and write to file
     with open(jsonFilePath, 'w', encoding='utf-8') as jsonf: 
         jsonString = json.dumps(jsonArray, indent=4)
         jsonf.write(jsonString)
           
           
 def subprocess_func(NUMBER_CALLING, CALLER_ID, extension_numbers, ANSWER_WAIT, ANSWER_DTMF_WAIT) -> bool:
-# Функция, которая запускает потоки
     
     commond = f"/usr/bin/python3 call.py {NUMBER_CALLING} {CALLER_ID} {extension_numbers} {ANSWER_WAIT} {ANSWER_DTMF_WAIT}"
     try:
@@ -98,8 +95,6 @@ def start(NUMBER_CALLING, CALLER_ID, ANSWER_WAIT, ANSWER_DTMF_WAIT, WORK_DTMF_SE
                 logging.info(f"Запущен поток pid: {sub.pid} для добавочного: {extension_number_temp}")
                 
                 if i == 150:
-                    # Если колличество проходов равно 100, 
-                    # то делаем паузу в 1 минуту
                     time.sleep(120)
                     logging.info(f"Запущено 150 звонков делаем паузу в 2 минуты")
                     
@@ -107,7 +102,6 @@ def start(NUMBER_CALLING, CALLER_ID, ANSWER_WAIT, ANSWER_DTMF_WAIT, WORK_DTMF_SE
                 
                 time.sleep(0.6)
         
-         # Делаем паузу, чтобы получть полный лог звонков
         time.sleep(int(ANSWER_WAIT) + int(ANSWER_DTMF_WAIT) + 12)
         
         csvFilePath = r'/var/log/asterisk/cdr-csv/Master.csv'
