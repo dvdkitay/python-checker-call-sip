@@ -1,4 +1,23 @@
-![Иллюстрация к проекту](https://github.com/dvdkitay/python-checker-call-sip/blob/master/temp/screen.png)
+<img src="https://img.shields.io/github/languages/code-size/dvdkitay/python-checker-call-sip" />
+<img src="https://img.shields.io/github/languages/top/dvdkitay/python-checker-call-sip" />
+<img src="https://img.shields.io/github/issues/dvdkitay/python-checker-call-sip" />
+<img src="https://img.shields.io/github/issues-pr/dvdkitay/python-checker-call-sip" />
+
+```
+[SCRIPT-DEBUG] INFO: Скрипт запущен
+[SCRIPT-DEBUG] INFO: Обнаружено 3 добавочных номеров
+[SCRIPT-DEBUG] INFO: Конфигурация запущена
+[SCRIPT-DEBUG] INFO: Файл статистики Asterisk очищен
+[SCRIPT-DEBUG] INFO: Файл результатов очищен
+[SCRIPT-DEBUG] INFO: Начало работы
+[SCRIPT-DEBUG] INFO: Работаем по добавочному номеру: 1
+[SCRIPT-DEBUG] INFO: Запущен поток pid: 42769 для добавочного: 1
+[SCRIPT-DEBUG] INFO: Работаем по добавочному номеру: 2
+[SCRIPT-DEBUG] INFO: Запущен поток pid: 42772 для добавочного: 2
+[SCRIPT-DEBUG] INFO: Работаем по добавочному номеру: 3
+[SCRIPT-DEBUG] INFO: Запущен поток pid: 42775 для добавочного: 3
+[SCRIPT-DEBUG] INFO: Рабочие: 3, Не рабочие: 0
+```
 
 Проект для тестирования и проверки рабочих добавочных номеров на удаленном номере. Настроен с транком Megafon, но можно исправить под любого провайдера, необходимо изменить данные в `install/sip.conf` перед установкой.
 
