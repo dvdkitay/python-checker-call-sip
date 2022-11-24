@@ -60,3 +60,9 @@ python3 app.py
 ```
 python3 show.py
 ```
+Результат выполнения
+`
+[SCRIPT-DEBUG] INFO: Добавочный 1 Статус: True
+[SCRIPT-DEBUG] INFO: Добавочный 2 Статус: True
+[SCRIPT-DEBUG] INFO: Добавочный 3 Статус: True
+`
