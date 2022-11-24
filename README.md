@@ -1,4 +1,4 @@
-![Иллюстрация к проекту](https://github.com/dvdkitay/python-checker-call-sip/temp/screen.png)
+![Иллюстрация к проекту](https://github.com/dvdkitay/python-checker-call-sip/blob/master/temp/screen.png)
 
 Проект для тестирования и проверки рабочих добавочных номеров на удаленном номере. Настроен с транком Megafon, но можно исправить под любого провайдера, необходимо изменить данные в `install/sip.conf` перед установкой.
 
