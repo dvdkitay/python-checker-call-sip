@@ -1,7 +1,9 @@
+<div align="left">
 <img src="https://img.shields.io/github/languages/code-size/dvdkitay/python-checker-call-sip" />
 <img src="https://img.shields.io/github/languages/top/dvdkitay/python-checker-call-sip" />
 <img src="https://img.shields.io/github/issues/dvdkitay/python-checker-call-sip" />
 <img src="https://img.shields.io/github/issues-pr/dvdkitay/python-checker-call-sip" />
+</div>
 
 ```
 [SCRIPT-DEBUG] INFO: Скрипт запущен
