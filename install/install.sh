@@ -4,9 +4,9 @@ sudo apt update
 
 sudo apt -y upgrade
 
-sudo apt install python3
+sudo apt install python3 -y
 
-sudo apt install python3-pip
+sudo apt install python3-pip -y
 
 pip3 install pycall
 
@@ -58,14 +58,22 @@ echo 'AST_GROUP="asterisk"' >> /etc/default/asterisk
 echo 'runuser = asterisk' >> /etc/asterisk/asterisk.conf
 echo 'rungroup = asterisk ' >> /etc/asterisk/asterisk.conf
 
+echo 'enable=yes' >> /etc/asterisk/cdr.conf
+echo 'safeshutdown=yes ' >> /etc/asterisk/cdr.conf
+
+
 sudo systemctl restart asterisk
 
 sudo systemctl enable asterisk
 
-cp sip.conf /etc/asterisk/
+cp install/sip.conf /etc/asterisk/
 
-cp extensions.conf /etc/asterisk/
+cp install/extensions.conf /etc/asterisk/
 
 clear
+
+service asterisk restart 
+asterisk -rx 'reload'
+asterisk -rx 'dialplan reload'
 
 echo "COMPLETED SUCCESS"
