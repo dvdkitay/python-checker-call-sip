@@ -77,12 +77,31 @@ chmod +x install.sh
 python3 app.py
 ```
 
+Результат работы
+
+```
+[SCRIPT-DEBUG] INFO: Скрипт запущен
+[SCRIPT-DEBUG] INFO: Обнаружено 3 добавочных номеров
+[SCRIPT-DEBUG] INFO: Конфигурация запущена
+[SCRIPT-DEBUG] INFO: Файл статистики Asterisk очищен
+[SCRIPT-DEBUG] INFO: Файл результатов очищен
+[SCRIPT-DEBUG] INFO: Начало работы
+[SCRIPT-DEBUG] INFO: Работаем по добавочному номеру: 1
+[SCRIPT-DEBUG] INFO: Запущен поток pid: 42769 для добавочного: 1
+[SCRIPT-DEBUG] INFO: Работаем по добавочному номеру: 2
+[SCRIPT-DEBUG] INFO: Запущен поток pid: 42772 для добавочного: 2
+[SCRIPT-DEBUG] INFO: Работаем по добавочному номеру: 3
+[SCRIPT-DEBUG] INFO: Запущен поток pid: 42775 для добавочного: 3
+[SCRIPT-DEBUG] INFO: Рабочие: 3, Не рабочие: 0
+```
+
 ## Проверка результатов после работы
 
 ```
 python3 show.py
 ```
-Результат выполнения
+
+Результат работы
 
 ```
 [SCRIPT-DEBUG] INFO: Добавочный 1 Статус: True
