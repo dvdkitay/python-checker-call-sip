@@ -3,9 +3,9 @@
 <img src="https://img.shields.io/github/languages/top/dvdkitay/python-checker-call-sip" />
 <img src="https://img.shields.io/github/issues/dvdkitay/python-checker-call-sip" />
 <img src="https://img.shields.io/github/issues-pr/dvdkitay/python-checker-call-sip" />
-</div>
 
-<p>
+<div>
+
 ```
 [SCRIPT-DEBUG] INFO: Скрипт запущен
 [SCRIPT-DEBUG] INFO: Обнаружено 3 добавочных номеров
@@ -89,4 +89,4 @@ python3 show.py
 [SCRIPT-DEBUG] INFO: Добавочный 2 Статус: True
 [SCRIPT-DEBUG] INFO: Добавочный 3 Статус: True
 ```
-</p>
+</div>
