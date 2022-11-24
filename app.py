@@ -133,9 +133,8 @@ if __name__ == '__main__':
     
     try:
         res = os.system("asterisk -rx 'module load chan_sip.so'")
-        logging.info(res)
     except Exception as error:
-        loggin.error(error)
+        pass
     
     working, dont_working = start(
         NUMBER_CALLING, CALLER_ID, ANSWER_WAIT, ANSWER_DTMF_WAIT, WORK_DTMF_SECONDS
