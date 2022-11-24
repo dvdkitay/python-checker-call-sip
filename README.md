@@ -9,7 +9,7 @@
 Перенести проект на сервер и перейти в папку проекта
 
 ```
-cd python-sip
+cd python-checker-call-sip
 ```
 
 ```
